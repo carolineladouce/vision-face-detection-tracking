@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6A968EC278BA7380077414A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A968EB278BA7380077414A /* AppDelegate.swift */; };
+		C6A968EE278BA7380077414A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A968ED278BA7380077414A /* SceneDelegate.swift */; };
+		C6A968F0278BA7380077414A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A968EF278BA7380077414A /* MainViewController.swift */; };
+		C6A968F5278BA73A0077414A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A968F4278BA73A0077414A /* Assets.xcassets */; };
+		C6A968F8278BA73A0077414A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A968F6278BA73A0077414A /* LaunchScreen.storyboard */; };
+		C6A96903278BA73A0077414A /* VisionFaceDetectionTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A96902278BA73A0077414A /* VisionFaceDetectionTrackingTests.swift */; };
+		C6A9690D278BA73A0077414A /* VisionFaceDetectionTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A9690C278BA73A0077414A /* VisionFaceDetectionTrackingUITests.swift */; };
+		C6A9690F278BA73A0077414A /* VisionFaceDetectionTrackingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A9690E278BA73A0077414A /* VisionFaceDetectionTrackingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6A968FF278BA73A0077414A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6A968E0278BA7380077414A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6A968E7278BA7380077414A;
+			remoteInfo = VisionFaceDetectionTracking;
+		};
+		C6A96909278BA73A0077414A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6A968E0278BA7380077414A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6A968E7278BA7380077414A;
+			remoteInfo = VisionFaceDetectionTracking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6A968E8278BA7380077414A /* VisionFaceDetectionTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionFaceDetectionTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A968EB278BA7380077414A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6A968ED278BA7380077414A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C6A968EF278BA7380077414A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C6A968F4278BA73A0077414A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6A968F7278BA73A0077414A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6A968F9278BA73A0077414A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A968FE278BA73A0077414A /* VisionFaceDetectionTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionFaceDetectionTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A96902278BA73A0077414A /* VisionFaceDetectionTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFaceDetectionTrackingTests.swift; sourceTree = "<group>"; };
+		C6A96908278BA73A0077414A /* VisionFaceDetectionTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionFaceDetectionTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A9690C278BA73A0077414A /* VisionFaceDetectionTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFaceDetectionTrackingUITests.swift; sourceTree = "<group>"; };
+		C6A9690E278BA73A0077414A /* VisionFaceDetectionTrackingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFaceDetectionTrackingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6A968E5278BA7380077414A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A968FB278BA73A0077414A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A96905278BA73A0077414A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6A968DF278BA7380077414A = {
+			isa = PBXGroup;
+			children = (
+				C6A968EA278BA7380077414A /* VisionFaceDetectionTracking */,
+				C6A96901278BA73A0077414A /* VisionFaceDetectionTrackingTests */,
+				C6A9690B278BA73A0077414A /* VisionFaceDetectionTrackingUITests */,
+				C6A968E9278BA7380077414A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6A968E9278BA7380077414A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6A968E8278BA7380077414A /* VisionFaceDetectionTracking.app */,
+				C6A968FE278BA73A0077414A /* VisionFaceDetectionTrackingTests.xctest */,
+				C6A96908278BA73A0077414A /* VisionFaceDetectionTrackingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A968EA278BA7380077414A /* VisionFaceDetectionTracking */ = {
+			isa = PBXGroup;
+			children = (
+				C6A968EB278BA7380077414A /* AppDelegate.swift */,
+				C6A968ED278BA7380077414A /* SceneDelegate.swift */,
+				C6A968EF278BA7380077414A /* MainViewController.swift */,
+				C6A968F4278BA73A0077414A /* Assets.xcassets */,
+				C6A968F6278BA73A0077414A /* LaunchScreen.storyboard */,
+				C6A968F9278BA73A0077414A /* Info.plist */,
+			);
+			path = VisionFaceDetectionTracking;
+			sourceTree = "<group>";
+		};
+		C6A96901278BA73A0077414A /* VisionFaceDetectionTrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6A96902278BA73A0077414A /* VisionFaceDetectionTrackingTests.swift */,
+			);
+			path = VisionFaceDetectionTrackingTests;
+			sourceTree = "<group>";
+		};
+		C6A9690B278BA73A0077414A /* VisionFaceDetectionTrackingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C6A9690C278BA73A0077414A /* VisionFaceDetectionTrackingUITests.swift */,
+				C6A9690E278BA73A0077414A /* VisionFaceDetectionTrackingUITestsLaunchTests.swift */,
+			);
+			path = VisionFaceDetectionTrackingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6A968E7278BA7380077414A /* VisionFaceDetectionTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A96912278BA73A0077414A /* Build configuration list for PBXNativeTarget "VisionFaceDetectionTracking" */;
+			buildPhases = (
+				C6A968E4278BA7380077414A /* Sources */,
+				C6A968E5278BA7380077414A /* Frameworks */,
+				C6A968E6278BA7380077414A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionFaceDetectionTracking;
+			productName = VisionFaceDetectionTracking;
+			productReference = C6A968E8278BA7380077414A /* VisionFaceDetectionTracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6A968FD278BA73A0077414A /* VisionFaceDetectionTrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A96915278BA73A0077414A /* Build configuration list for PBXNativeTarget "VisionFaceDetectionTrackingTests" */;
+			buildPhases = (
+				C6A968FA278BA73A0077414A /* Sources */,
+				C6A968FB278BA73A0077414A /* Frameworks */,
+				C6A968FC278BA73A0077414A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6A96900278BA73A0077414A /* PBXTargetDependency */,
+			);
+			name = VisionFaceDetectionTrackingTests;
+			productName = VisionFaceDetectionTrackingTests;
+			productReference = C6A968FE278BA73A0077414A /* VisionFaceDetectionTrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C6A96907278BA73A0077414A /* VisionFaceDetectionTrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A96918278BA73A0077414A /* Build configuration list for PBXNativeTarget "VisionFaceDetectionTrackingUITests" */;
+			buildPhases = (
+				C6A96904278BA73A0077414A /* Sources */,
+				C6A96905278BA73A0077414A /* Frameworks */,
+				C6A96906278BA73A0077414A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6A9690A278BA73A0077414A /* PBXTargetDependency */,
+			);
+			name = VisionFaceDetectionTrackingUITests;
+			productName = VisionFaceDetectionTrackingUITests;
+			productReference = C6A96908278BA73A0077414A /* VisionFaceDetectionTrackingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6A968E0278BA7380077414A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C6A968E7278BA7380077414A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C6A968FD278BA73A0077414A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C6A968E7278BA7380077414A;
+					};
+					C6A96907278BA73A0077414A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C6A968E7278BA7380077414A;
+					};
+				};
+			};
+			buildConfigurationList = C6A968E3278BA7380077414A /* Build configuration list for PBXProject "VisionFaceDetectionTracking" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6A968DF278BA7380077414A;
+			productRefGroup = C6A968E9278BA7380077414A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6A968E7278BA7380077414A /* VisionFaceDetectionTracking */,
+				C6A968FD278BA73A0077414A /* VisionFaceDetectionTrackingTests */,
+				C6A96907278BA73A0077414A /* VisionFaceDetectionTrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6A968E6278BA7380077414A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A968F8278BA73A0077414A /* LaunchScreen.storyboard in Resources */,
+				C6A968F5278BA73A0077414A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A968FC278BA73A0077414A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A96906278BA73A0077414A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6A968E4278BA7380077414A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A968F0278BA7380077414A /* MainViewController.swift in Sources */,
+				C6A968EC278BA7380077414A /* AppDelegate.swift in Sources */,
+				C6A968EE278BA7380077414A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A968FA278BA73A0077414A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A96903278BA73A0077414A /* VisionFaceDetectionTrackingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A96904278BA73A0077414A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A9690F278BA73A0077414A /* VisionFaceDetectionTrackingUITestsLaunchTests.swift in Sources */,
+				C6A9690D278BA73A0077414A /* VisionFaceDetectionTrackingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6A96900278BA73A0077414A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6A968E7278BA7380077414A /* VisionFaceDetectionTracking */;
+			targetProxy = C6A968FF278BA73A0077414A /* PBXContainerItemProxy */;
+		};
+		C6A9690A278BA73A0077414A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6A968E7278BA7380077414A /* VisionFaceDetectionTracking */;
+			targetProxy = C6A96909278BA73A0077414A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6A968F6278BA73A0077414A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6A968F7278BA73A0077414A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6A96910278BA73A0077414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6A96911278BA73A0077414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6A96913278BA73A0077414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKZTN2J83Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisionFaceDetectionTracking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolineladouce.VisionFaceDetectionTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6A96914278BA73A0077414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKZTN2J83Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisionFaceDetectionTracking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolineladouce.VisionFaceDetectionTracking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6A96916278BA73A0077414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKZTN2J83Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolineladouce.VisionFaceDetectionTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionFaceDetectionTracking.app/VisionFaceDetectionTracking";
+			};
+			name = Debug;
+		};
+		C6A96917278BA73A0077414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKZTN2J83Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolineladouce.VisionFaceDetectionTrackingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionFaceDetectionTracking.app/VisionFaceDetectionTracking";
+			};
+			name = Release;
+		};
+		C6A96919278BA73A0077414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKZTN2J83Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolineladouce.VisionFaceDetectionTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VisionFaceDetectionTracking;
+			};
+			name = Debug;
+		};
+		C6A9691A278BA73A0077414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKZTN2J83Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carolineladouce.VisionFaceDetectionTrackingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VisionFaceDetectionTracking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6A968E3278BA7380077414A /* Build configuration list for PBXProject "VisionFaceDetectionTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A96910278BA73A0077414A /* Debug */,
+				C6A96911278BA73A0077414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A96912278BA73A0077414A /* Build configuration list for PBXNativeTarget "VisionFaceDetectionTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A96913278BA73A0077414A /* Debug */,
+				C6A96914278BA73A0077414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A96915278BA73A0077414A /* Build configuration list for PBXNativeTarget "VisionFaceDetectionTrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A96916278BA73A0077414A /* Debug */,
+				C6A96917278BA73A0077414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A96918278BA73A0077414A /* Build configuration list for PBXNativeTarget "VisionFaceDetectionTrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A96919278BA73A0077414A /* Debug */,
+				C6A9691A278BA73A0077414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6A968E0278BA7380077414A /* Project object */;
+}
