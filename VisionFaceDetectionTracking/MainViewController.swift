@@ -42,6 +42,9 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         connection.videoOrientation = .portrait
     }
     
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        print("Frame received")
+    }
     
     
     override func viewDidLoad() {
@@ -52,6 +55,7 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         
         self.addCameraInput()
         self.showCameraFeed()
+        self.getCameraFrames()
         self.captureSession.startRunning()
     }
     
