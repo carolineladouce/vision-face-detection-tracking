@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     private let captureSession = AVCaptureSession()
     
@@ -29,6 +29,21 @@ class MainViewController: UIViewController {
         self.previewLayer.frame = self.view.frame
     }
 
+    private let videoDataOutput = AVCaptureVideoDataOutput()
+    
+    private func getCameraFrames() {
+        self.videoDataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString) : NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any]
+        self.videoDataOutput.alwaysDiscardsLateVideoFrames = true
+        self.videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "camera_frame_processing_queue"))
+        self.captureSession.addOutput(self.videoDataOutput)
+        
+        guard let connection = self.videoDataOutput.connection(with: AVMediaType.video),
+              connection.isVideoOrientationSupported else { return }
+        connection.videoOrientation = .portrait
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
