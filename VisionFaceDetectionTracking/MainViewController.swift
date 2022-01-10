@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
     
     private let captureSession = AVCaptureSession()
     
-    private func addCaeraInput() {
+    private func addCameraInput() {
         guard let device = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDualCamera, .builtInTrueDepthCamera], mediaType: .video, position: .front).devices.first else {
             fatalError("No back camera device found")
         }
