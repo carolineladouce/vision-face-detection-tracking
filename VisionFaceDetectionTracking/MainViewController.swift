@@ -21,12 +21,28 @@ class MainViewController: UIViewController {
         self.captureSession.addInput(cameraInput)
     }
     
+    private lazy var previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
+    
+    private func showCameraFeed() {
+        self.previewLayer.videoGravity = .resizeAspectFill
+        self.view.layer.addSublayer(self.previewLayer)
+        self.previewLayer.frame = self.view.frame
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .white
+        
+        self.addCameraInput()
+        self.showCameraFeed()
+        self.captureSession.startRunning()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.previewLayer.frame = self.view.frame
     }
 
 
