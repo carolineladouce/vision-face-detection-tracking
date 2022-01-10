@@ -71,6 +71,33 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     }
     
     
+    private var boxDrawings: [CAShapeLayer] = []
+    
+    private func handleFaceDetectionResults(_ observedFaces: [VNFaceObservation]) {
+        self.clearDrawings()
+        
+        let facesBoundingBoxes: [CAShapeLayer] = observedFaces.map({
+            (observedFace: VNFaceObservation) -> CAShapeLayer in
+            
+            let faceBoundingBoxOnScreen = self.previewLayer.layerRectConverted(fromMetadataOutputRect: observedFace.boundingBox)
+            let faceBoundingBoxPath = CGPath(rect: faceBoundingBoxOnScreen, transform: nil)
+            let faceBoundingBoxShape = CAShapeLayer()
+            faceBoundingBoxShape.path = faceBoundingBoxPath
+            faceBoundingBoxShape.fillColor = UIColor.clear.cgColor
+            faceBoundingBoxShape.strokeColor = UIColor.green.cgColor
+            
+            return faceBoundingBoxShape
+        })
+        
+        facesBoundingBoxes.forEach({ faceBoundingBox in self.view.layer.addSublayer(faceBoundingBox) })
+        self.boxDrawings = facesBoundingBoxes
+    }
+    
+    private func clearDrawings() {
+        self.boxDrawings.forEach({ drawing in drawing.removeFromSuperlayer() })
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
