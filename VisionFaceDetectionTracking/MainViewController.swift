@@ -58,10 +58,12 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     private func detectFace(in image: CVPixelBuffer) {
         let faceDetectionRequest = VNDetectFaceLandmarksRequest(completionHandler: { (request: VNRequest, error: Error?) in
             DispatchQueue.main.async {
-                if let results = request.results as? [VNFaceObservation], results.count > 0 {
+                if let results = request.results as? [VNFaceObservation] {
                     print("Number of faces (results) detected: \(results.count)")
+                    self.handleFaceDetectionResults(results)
                 } else {
                     print("No faces (results) detected")
+                    self.clearDrawings()
                 }
             }
         })
@@ -96,6 +98,9 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     private func clearDrawings() {
         self.boxDrawings.forEach({ drawing in drawing.removeFromSuperlayer() })
     }
+    
+    
+    
     
     
     override func viewDidLoad() {
