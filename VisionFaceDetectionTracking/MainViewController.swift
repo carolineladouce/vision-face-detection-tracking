@@ -14,6 +14,31 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
     
     private let captureSession = AVCaptureSession()
     
+    private lazy var previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
+    
+    private let videoDataOutput = AVCaptureVideoDataOutput()
+    
+    private var boxDrawings: [CAShapeLayer] = []
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .white
+        
+        self.addCameraInput()
+        self.showCameraFeed()
+        self.getCameraFrames()
+        self.captureSession.startRunning()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.previewLayer.frame = self.view.frame
+    }
+    
+    
     private func addCameraInput() {
         guard let device = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDualCamera, .builtInTrueDepthCamera], mediaType: .video, position: .front).devices.first else {
             fatalError("No back camera device found")
@@ -23,7 +48,6 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         self.captureSession.addInput(cameraInput)
     }
     
-    private lazy var previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
     
     private func showCameraFeed() {
         self.previewLayer.videoGravity = .resizeAspectFill
@@ -31,7 +55,6 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         self.previewLayer.frame = self.view.frame
     }
     
-    private let videoDataOutput = AVCaptureVideoDataOutput()
     
     private func getCameraFrames() {
         self.videoDataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString) : NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any]
@@ -72,8 +95,6 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         try? imageRequestHandler.perform([faceDetectionRequest])
     }
     
-    
-    private var boxDrawings: [CAShapeLayer] = []
     
     private func handleFaceDetectionResults(_ observedFaces: [VNFaceObservation]) {
         self.clearDrawings()
@@ -142,24 +163,6 @@ class MainViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
         eyeDrawing.strokeColor = UIColor.green.cgColor
         
         return eyeDrawing
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        view.backgroundColor = .white
-        
-        self.addCameraInput()
-        self.showCameraFeed()
-        self.getCameraFrames()
-        self.captureSession.startRunning()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        self.previewLayer.frame = self.view.frame
     }
     
     
